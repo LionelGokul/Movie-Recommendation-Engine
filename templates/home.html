@@ -1,31 +1,49 @@
 <doctype html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Movie Recommendation Engine!
-        </title>
-        <link rel="shortcut icon" href="static/favicon.ico">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <script src="static/Scripts/Site.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="static/CSS/Site.css">
-    </head>
-    <body>
-         <p class="searchtext">Search Your Movies Here</p>
-         <div class="d-flex justify-content-center">
-             <div class="searchbar">
-             <input class="search_input" list="movieslist" id ="movies" type="text" name="" placeholder="Enter Your Favourite Movie...">
-             <button class="search_icon"><i class="fas fa-search"></i></button><br>
-             <datalist id="movieslist">
-             </datalist>
-             </div>
-         </div>
-         <div id="zeromovies" title="Sorry Movie Not Found :(" hidden="hidden"> The movie which you searched for does'nt exist in our database yet. We are working on it. Thanks for using our Application!</div>
-        <div class="recommended-movies-container"></div>
-        <div class="loader">Fetching Movies...</div>
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendation Engine!</title>
+    <link rel="shortcut icon" href="static/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="static/Scripts/Site.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/CSS/Site.css" />
+  </head>
+  <body>
+    <p class="searchtext">Search Your Movies Here</p>
+    <div class="d-flex justify-content-center">
+      <div class="searchbar">
+        <input
+          class="search_input"
+          list="movieslist"
+          id="movies"
+          type="text"
+          name=""
+          placeholder="Type atleast 3 words..."
+        />
+        <button class="search_icon"><i class="fas fa-search"></i></button><br />
+        <datalist id="movieslist"> </datalist>
+      </div>
+    </div>
+    <div id="zeromovies" title="Sorry Movie Not Found :(" hidden="hidden">
+      The movie which you searched for does'nt exist in our database yet. We are
+      working on it. Thanks for using our Application!
+    </div>
+    <div class="recommended-movies-container"></div>
+    <div class="loader">Fetching Movies...</div>
+  </body>
 </doctype>
